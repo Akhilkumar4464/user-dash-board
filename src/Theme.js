@@ -162,40 +162,40 @@ export const muiThemeSettings = (mode) => {
             },
           }),
     },
-    Typography: {
-      fontFamily: [" Source Code Pro", "sens -serif"].join(","),
-      fontSize: 14,
-      h1: {
-         fontFamily: [" Source Code Pro", "sens -serif"].join(","),
-        fontSize: 24,
-        fontWeight: 600,
-      },
-      h2: {
-         fontFamily: [" Source Code Pro", "sens -serif"].join(","),
-        fontSize: 20,
-        fontWeight: 600,
-      },
-      h3: {
-         fontFamily: [" Source Code Pro", "sens -serif"].join(","),
-        fontSize: 18,
-        fontWeight: 600,
-      },
-      h4: {
-         fontFamily: [" Source Code Pro", "sens -serif"].join(","),
-        fontSize: 16,
-        fontWeight: 600,
-      },
-      h5: {
-         fontFamily: [" Source Code Pro", "sens -serif"].join(","),
+      Typography: {
+        fontFamily: ["Source Code Pro", "sans-serif"].join(","),
         fontSize: 14,
-        fontWeight: 600,
+        h1: {
+           fontFamily: ["Source Code Pro", "sans-serif"].join(","),
+          fontSize: 24,
+       
+        },
+        h2: {
+           fontFamily: ["Source Code Pro", "sans-serif"].join(","),
+          fontSize: 20,
+         
+        },
+        h3: {
+           fontFamily: ["Source Code Pro", "sans-serif"].join(","),
+          fontSize: 18,
+      
+        },
+        h4: {
+           fontFamily: ["Source Code Pro", "sans-serif"].join(","),
+          fontSize: 16,
+        
+        },
+        h5: {
+           fontFamily: ["Source Code Pro", "sans-serif"].join(","),
+          fontSize: 14,
+         
+        },
+        h6: {
+           fontFamily: ["source-sans-pro", "sans-serif"].join(","),
+          fontSize: 12,
+         
+        },
       },
-      h6: {
-         fontFamily: [" source -sans-pro", "sens -serif"].join(","),
-        fontSize: 12,
-        fontWeight: 600,
-      },
-    },
   };
 };
 
