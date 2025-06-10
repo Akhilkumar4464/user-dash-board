@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Sidebar  , Menu, MenuItem } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
+
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { tokens } from "../../Theme";
@@ -15,7 +16,6 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -34,27 +34,6 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     </MenuItem>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function SideBar() {
   const theme = useTheme();
@@ -149,7 +128,7 @@ function SideBar() {
               </Box>
             </Box>
           )}
-          <Box paddingLeft={ iscollapsed ? undefined:"10%"}>
+          <Box paddingLeft={iscollapsed ? undefined : "10%"}>
             <Item
               title="Dashboard"
               to="/"
@@ -172,7 +151,7 @@ function SideBar() {
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
+             <Item
               title="Contacts Information"
               to="/contacts"
               icon={<ContactsOutlinedIcon />}
@@ -259,4 +238,3 @@ function SideBar() {
 }
 
 export default SideBar;
- 
