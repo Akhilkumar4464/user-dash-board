@@ -1,21 +1,12 @@
 import { Box } from "@mui/material";
-import { DataGrid, GridToolbarContainer, GridToolbarExport, GridToolbarFilterButton, GridToolbarColumnsButton, GridToolbarDensitySelector } from "@mui/x-data-grid";
+import { DataGrid} from "@mui/x-data-grid";
 import { ColorModeContext, tokens } from "../../theme";
 import { mockDataContacts } from "../../data/mockData";
 
 import Header from "../../components/Header";
 import { useTheme } from "@mui/material";
 
-const CustomToolbar = () => {
-  return (
-    <GridToolbarContainer>
-      <GridToolbarColumnsButton />
-      <GridToolbarFilterButton />
-      <GridToolbarDensitySelector />
-      <GridToolbarExport />
-    </GridToolbarContainer>
-  );
-};
+
 
 const Team = () => {
   const theme = useTheme(ColorModeContext);
@@ -48,7 +39,7 @@ const Team = () => {
     },
     { field: "address", headerName: "Address", flex: 1 },
     { field: "city", headerName: "City", flex: 1 },
-    { field: "zip", headerName: "ZipCode", flex: 1 },
+    { field: "zipCode", headerName: "Zip", flex: 1 },
   ];
 
   return (
@@ -86,7 +77,7 @@ const Team = () => {
           },
         }}
       >
-        <DataGrid checkboxSelection rows={mockDataContacts} columns={columns} components={{ Toolbar: CustomToolbar }} />
+        <DataGrid checkboxSelection rows={mockDataContacts} columns={columns}  />
       </Box>
     </Box>
   );
