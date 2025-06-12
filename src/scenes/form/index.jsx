@@ -57,7 +57,7 @@ function Form() {
     }}
    >
       <TextField
-      fullwidth
+      fullWidth
       label="First Name"
       variant="filled"
  
@@ -74,7 +74,7 @@ function Form() {
       />
        
   <TextField
-      fullwidth
+      fullWidth
       label="last Name"
       variant="filled"
  
@@ -90,7 +90,7 @@ function Form() {
         }}
       />
 <TextField
-      fullwidth
+      fullWidth
       label="email"
       variant="filled"
  
@@ -106,13 +106,9 @@ function Form() {
         }}
       />
 
-    
-
-      
-
 
       <TextField
-      fullwidth
+      fullWidth
       label=" address"
       variant="filled"
  
@@ -128,9 +124,9 @@ function Form() {
         }}
       />
 
-     
+
 <TextField
-      fullwidth
+      fullWidth
       label=" address1"
       variant="filled"
  
@@ -147,7 +143,7 @@ function Form() {
       />
 
      <TextField
-      fullwidth
+      fullWidth
       label=" address2"
       variant="filled"
  
