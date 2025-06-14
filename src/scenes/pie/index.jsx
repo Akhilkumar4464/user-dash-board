@@ -1,11 +1,16 @@
-import React from 'react'
+import { Box } from "@mui/material";
+import Header from "../../components/Header";
+import PiChart from "../../components/PiChart";
 
-function index() {
+const Pie = () => {
   return (
-    <div>
-      pie 
-    </div>
-  )
-}
+    <Box m="20px">
+      <Header title="Pie Chart" subtitle="Simple Pie Chart" />
+      <Box height="75vh">
+        <PiChart />
+      </Box>
+    </Box>
+  );
+};
 
-export default index
+export default Pie;
